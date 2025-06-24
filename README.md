@@ -1,2 +1,2 @@
-# sic_june_23
+# sic_
 class 1
