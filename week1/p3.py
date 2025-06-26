@@ -29,3 +29,40 @@ for i in range(1,fib_range-1):
     first_term = second_term
     second_term = fib
 print(fib)
+
+
+# 3. Count number of Prime digits in a number
+digit = input("Enter the digits to find the number of primes in it: ")
+numbers = []
+count = 0
+for num in digit:
+    number = int(num)
+    for n in range (2, num):
+        if num%n == 0:
+            count +=1
+            break
+print(count)
+
+
+# 6. Find sum of thye series n - n2/3 + n4/5 - n8/7 .... m terms (1<=n<=4 and 2<=m<=10)
+n_element = int(input("Enter the N-th element: "))
+m_element = int(input("Enter the M-th element: "))
+sum_of_series = 0
+if (n_element >= 1 or n_element <=4) and (m_element >= 2 or m_element <= 10):
+    for i in range (0, m_element+1):
+        numerator = n_element ** (2*i)
+        denomenator = (2 * i)+1
+        sign = -1**i
+        sum_of_series += (numerator / denomenator) * sign
+print(sum_of_series)
+        
+    
+#4. Print the Prime numbers in decreasing order between m and n (m < n)
+n = int(input("Enter the starting range: "))
+m = int(input("Enter the endig range "))
+prime_numbers = []
+for num in range(n, m+1):
+    for i in range(i+1,m+1):
+        if num % i == 0:
+            prime_numbers.append(num)
+print(prime_numbers)
