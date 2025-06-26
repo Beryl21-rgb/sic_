@@ -49,7 +49,7 @@ n_element = int(input("Enter the N-th element: "))
 m_element = int(input("Enter the M-th element: "))
 sum_of_series = 0
 if (n_element >= 1 or n_element <=4) and (m_element >= 2 or m_element <= 10):
-    for i in range (0, m_element+1):
+    for i in range (0, m_element):
         numerator = n_element ** (2*i)
         denomenator = (2 * i)+1
         sign = -1**i
