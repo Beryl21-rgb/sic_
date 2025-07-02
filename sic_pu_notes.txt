@@ -238,3 +238,171 @@ print n m k
 str input()
 str input(str)
 NOTE: There is no function overloading in Python.
+--------------------------------------------------------
+DAY4 THURSDAY 26-06-2025
+
+Mantra:
+The code we define/implement must be understandable by any programmer in the world.
+
+The O/P (execution) must be understandable by any common person in the world.
+
+range() is a function in Python which takes a range of values and YIELDS the values one by one from the range depending on the increment.
+
+range(10)
+values the range yields are 0 to 9 with increment of +1
+range(1, 20)
+values the range yields are 1 to 19 with increment of +1
+range(1, 20, 3)
+values the range yields are 1 to 19 with increment of +3
+range(21, 2, -3)
+values the range yields are 21 to 3 with increment of -3
+
+range()
+input()
+print()
+len()
+min()
+max()
+sorted()
+
+Students Repo Links:
+https://docs.google.com/spreadsheets/d/1iUklq9hEl6KcluwuOU18ECfiK45syp4NLX0EDcVMnTA/edit?gid=0#gid=0
+
+https://github.com/neelmyna/sic_pu_june25
+-----------------------------------------------------------------
+DAY5 FRIDAY 27-06-2025
+
+ARRAY/LIST:
+-> It is a data structure in which all elements of the array are stored in continuous memory locations. i.e. there is no gap between any 2 consecutive elements of the array.
+-> What is a Data Structure?
+Ans: Storage + Arrangement of data in memory.
+-> In the array usually all elements will be of the same DT. However, this need not true in the case of Python.
+-> An array is time efficient DS. Because the look-up is O(1). i.e. it takes 1 unit time to access any element in an array.
+-> Assuming size of an array is fixed, there is always wastage or shortage of memory. Hence fixed size arrays are always memory inefficient.
+-> When ever we pass an array to a function/method we pass only reference (address of 1st element) of the rray. This kind of call to the function is called as call by reference.
+
+List in Python:
+-> It is an ordered DS (where we can use the indexing)
+-> Mutable
+
+List class in Python
+
+Problems:
+1. Find smallest and biggest elements in an list of n numbers.
+2. Find the frequency an element in a list of n elements.
+3. Remove the duplicates in a list of size n
+**4. Given a number, find very next possible bigger number that has all the digits of the given number.
+5. Accpet a number from the user (4 digit number where a digit can repeat at most 2 times )and print the coutn of recursions reqired to arrive at Karpekar's Constant.
+Recursive Problems:
+1. Find Factorial of a number
+2. Print N Fibo terms with 1 and 2 as 1st 2 terms.
+3. Find sum of list elements
+-----------------------------------------------------------------
+DAY6 SATURDAY 28-06-2025
+
+List example programs 
+l1 = [1, 2, 5, 2, 4, 3]
+print(sorted(l1))
+print(l1)
+print(l1.remove(2))
+--------------------------
+List Slicing:
+
+----------------------------------------
+Implement Stack using list, insert and delete from rear of the list
+Implement Stack using list, insert and delete from front of the list
+Implement Queue using list, insert at rear delete from front the list
+Implement Queue using list, insert front, delete from rear of the list
+-------------------------
+int num;
+size = scanner.nextInt();
+int[] numbers = new int[size];
+
+void myFunction(Car car) {
+	car.closeWindow();
+	
+	NewCar myCar = new Car();
+}
+----------------------------------------------
+DAY-7 Monday 30-06-2025 
+
+How inheritance is technically implemented?
+Why a constructor cannot be final abstract and static?
+Why main() is public static and void?
+Explain runtime polymorphism (method over-riding).
+What is collection and explain its use and memory mapping.
+
+List Comprehension:
+list is a DS in Python (pre defined). list is a class
+list is ordered
+list is mutable
+
+l1 = [1, 43, 3, 2, 5]
+
+l2 = [1, 2, 5, 4, 3]
+
+name = 'shanmugha'
+
+name.find('u')
+name.find('mu', 2)
+name.find('uu', 2, 7)
+name.index('mugha', 3, 7)
+------------------------------------------
+original_str = 'college'
+
+i++
+j--
+a[i] = b[j]
+b[j]++
+
+a[++i] = b[--j]++ // low cohesive
+----------------------------------
+2 servers
+2 types of requests
+allocation +ve number
+deallocation -ve number
+
+N
+45  -13  -30  -10  50  35  -5  5  8
+0         2         4
+
+45 + (-30) + 50 + (-5) + 8
+68 units of memory is allocated by server1
+----------------------------------- 
+Read N,  X  and Y
+X + Y = N
+
+numbers = []
+Read N numbers in to numbers
+
+sort numbers (ascending)
+p = numbers[y] - nunmbers[y-1] - 1
+print p
+
+-------------------------------------------
+def check_arrangement(b, g)
+	arrangment = true
+	for i in range(1, n):
+		if girls[i] >= girls[i-1] and boys[i] >= girls[i-1]:
+			continue # go to the next iteration
+		else:
+			arrangment = False
+			break # Once we know such arrangment is not possible, quit
+	if arrangment and (g[0] >= b[0] and g[-1] >= b[-1]) or (b[0] >= g[0] and b[-1] >= g[-1])
+		return "yes"
+	
+	
+	
+Read T
+output[]
+	for T times do:
+		Read N
+		g[]
+		b[]
+		Read N heights of g[]
+		Read N heights of b[]
+		sort g[]
+		sort b[]
+		result = check_arrangement(b, g)
+		output.append(result)
+print output
