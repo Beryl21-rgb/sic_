@@ -24,7 +24,7 @@ def stack(choice):
             l.pop()
         case 3:
             if len(l) == 0:
-                prnit("Stack is Emty")
+                print("Stack is Emty")
                 return
             else:
                 print(l)
@@ -72,10 +72,10 @@ def stack(choice):
         case _:
             print('Invalid choice')   
             
-while True:
-    print('1.Push  2.Pop  3.Display   4.exit')
-    choice = int(input("Stack Operation: "))
-    stack(choice)
+    while True:
+        print('1.Push  2.Pop  3.Display   4.exit')
+        choice = int(input("Stack Operation: "))
+        stack(choice)
 
 
 
