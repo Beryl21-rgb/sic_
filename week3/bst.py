@@ -1,10 +1,3 @@
-'''
-add node
-search node
-list tree (inorder / preorder / postorder)
-delete node
-'''
-
 class Node:
     def __init__(self, data = 0):
         if data == 0:
