@@ -1,0 +1,10 @@
+import numpy as np
+week_spendings = np.array([50, 45, 300, 94, 100, 64, 125, 35])
+high_spendings = np.where(week_spendings > 100)
+highest_spendings = np.max(week_spendings)
+low_spendings = np.where(week_spendings < 100)
+lowest_spendings = np.min(week_spendings)
+print(high_spendings)
+print(highest_spendings)
+print(low_spendings)
+print(lowest_spendings)
